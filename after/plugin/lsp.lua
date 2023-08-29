@@ -4,6 +4,7 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
 	'omnisharp',
+    'lua_ls',
 })
 
 local cmp = require('cmp')
@@ -30,5 +31,6 @@ lsp.on_attach(function(client)
 	vim.keymap.set("n", "<C-h>" , function() vim.lsp.buf.signature_help() end, opts)
 
 end)
+
 
 lsp.setup()
