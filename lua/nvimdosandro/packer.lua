@@ -15,7 +15,8 @@ return require('packer').startup(function(use)
 	{
 		use "EdenEast/nightfox.nvim", 
 		as = "nightfox",
-		config = function() vim.cmd('colorscheme nightfox') end
+		config = function()
+			vim.cmd('colorscheme nightfox') end
 	}
 
 	use{'xiyaowong/transparent.nvim',}
