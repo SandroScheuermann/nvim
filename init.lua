@@ -1,1 +1,1 @@
-require("nvimdosandro")
+require("nvimdosandro.init")
