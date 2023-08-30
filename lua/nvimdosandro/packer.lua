@@ -5,14 +5,14 @@ return require('packer').startup(function(use)
 
     use
     {
-        'nvim-telescope/telescope.nvim', 
+        'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use 
+    use
     {
-        use "EdenEast/nightfox.nvim", 
+        use "EdenEast/nightfox.nvim",
         as = "nightfox",
         config = function()
             vim.cmd('colorscheme nightfox') end
@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
 
         use{'xiyaowong/transparent.nvim',}
 
-        use 
+        use
         {
             'nvim-treesitter/nvim-treesitter',
             run = {':TSUpdate'}
