@@ -9,7 +9,7 @@ local theme = {
 require('tabby.tabline').set(function(line)
     return {
         {
-            { ' ✠ ', hl = theme.head },
+            { ' 🤓 ', hl = theme.head },
             line.sep('', theme.head, theme.fill),
         },
         line.tabs().foreach(function(tab)
@@ -43,3 +43,5 @@ require('tabby.tabline').set(function(line)
         hl = theme.fill,
     }
 end)
+
+vim.o.showtabline = 2
