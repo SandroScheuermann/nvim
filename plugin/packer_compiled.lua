@@ -79,6 +79,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0" },
+    loaded = true,
+    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
@@ -104,9 +110,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nightfox.nvim"] = {
+  nightfox = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\bvim\0" },
     loaded = true,
-    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
+    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["noice.nvim"] = {
@@ -149,6 +156,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["tabby.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tabby.nvim",
+    url = "https://github.com/nanozuki/tabby.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
@@ -172,6 +184,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nightfox
+time([[Config for nightfox]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\bvim\0", "config", "nightfox")
+time([[Config for nightfox]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
+time([[Config for catppuccin]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
