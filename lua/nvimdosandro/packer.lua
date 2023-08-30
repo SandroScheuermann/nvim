@@ -48,11 +48,17 @@ use {
       {'L3MON4D3/LuaSnip'},     -- Required
    }
 }
-use{"nvim-tree/nvim-tree.lua"}
+use{'nvim-tree/nvim-tree.lua'}
 
-use{"rcarriga/nvim-notify"}
+use
+{
+    'folke/noice.nvim',
+    requires = {
+        {'rcarriga/nvim-notify'},
+        {'MunifTanjim/nui.nvim'},
+    }
 
-use{"folke/noice.nvim"}
+}
 
 use{"nanozuki/tabby.nvim"}
 
