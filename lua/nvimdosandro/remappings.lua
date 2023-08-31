@@ -12,7 +12,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "Q", "<nop>") -- reza a lenda que é zoado apertar Q...
 
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+--vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 vim.keymap.set("n", "<C-q>", vim.cmd.tabNext)
 vim.keymap.set("n", "<C-e>", vim.cmd.tabnext)
@@ -28,3 +28,6 @@ vim.keymap.set("n", "<leader>6", function() vim.cmd("tabnext6") end)
 vim.keymap.set("n", "<leader>7", function() vim.cmd("tabnext7") end)
 vim.keymap.set("n", "<leader>8", function() vim.cmd("tabnext8") end)
 vim.keymap.set("n", "<leader>9", function() vim.cmd("tabnext9") end)
+
+vim.keymap.set("n", "<leader>sf", function () vim.cmd("w!") end)
+vim.keymap.set("n", "<leader>sa", function () vim.cmd("wa!") end)
