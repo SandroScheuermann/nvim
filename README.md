@@ -2,7 +2,7 @@
 - Package manager, probably I'll be migrating to lazy afterwards [packer](https://github.com/wbthomason/packer.nvim)
 - Syntax highlighting [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)    
 - Git integration [vim-fugitive](https://github.com/tpope/vim-fugitive) 
-- LSP "manger", it is a bundle of plugins, mason, auto-complete plugins, etc. [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim) 
+- LSP "manager", it is a bundle of plugins, mason, auto-complete plugins, etc. [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim) 
 - Literally an undo tree... [undotree](https://github.com/mbbill/undotree)
 - Colorscheme [catppuccin]([https://github.com/EdenEast/nightfox.nvim](https://github.com/catppuccin/nvim))
 - File finder [telescope](https://github.com/nvim-telescope/telescope.nvim)
