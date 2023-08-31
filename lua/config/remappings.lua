@@ -30,3 +30,5 @@ vim.keymap.set("n", "<leader>9", function() vim.cmd("tabnext9") end)
 vim.keymap.set("n", "<leader>sf", function () vim.cmd("w!") end)
 vim.keymap.set("n", "<leader>sa", function () vim.cmd("wa!") end)
 vim.keymap.set("n", "<leader>lc", function () vim.cmd("so") end)
+
+vim.keymap.set("n", "<leader>gg", function () require("nvterm.terminal").send("lazygit \r", "float") end)
