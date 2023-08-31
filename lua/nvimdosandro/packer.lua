@@ -26,12 +26,9 @@ use
    run = {':TSUpdate'}
 }
 
-use{'theprimeagen/harpoon'}
-
 use{'mbbill/undotree'}
 
 use{'tpope/vim-fugitive'}
-
 
 use {
    'VonHeikemen/lsp-zero.nvim',
@@ -50,17 +47,15 @@ use {
 }
 use{'nvim-tree/nvim-tree.lua'}
 
+use{"nanozuki/tabby.nvim"}
+
+use{"nvim-tree/nvim-web-devicons"}
+
 use
 {
-    'folke/noice.nvim',
-    requires = {
-        {'rcarriga/nvim-notify'},
-        {'MunifTanjim/nui.nvim'},
-    }
-
+  'VonHeikemen/fine-cmdline.nvim',
+  requires = {{'MunifTanjim/nui.nvim'}}
 }
-
-use{"nanozuki/tabby.nvim"}
 
 end)
 

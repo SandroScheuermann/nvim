@@ -19,7 +19,7 @@ vim.keymap.set("n", "<C-e>", vim.cmd.tabnext)
 vim.keymap.set("n", "<C-w>", vim.cmd.tabclose)
 vim.keymap.set("n", "<C-t>", vim.cmd.tabnew)
 
-vim.keymap.set("n", "<leader>1", function() vim.cmd("tabNext1") end)
+vim.keymap.set("n", "<leader>1", function() vim.cmd("tabnext1") end)
 vim.keymap.set("n", "<leader>2", function() vim.cmd("tabnext2") end)
 vim.keymap.set("n", "<leader>3", function() vim.cmd("tabnext3") end)
 vim.keymap.set("n", "<leader>4", function() vim.cmd("tabnext4") end)

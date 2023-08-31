@@ -90,10 +90,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  harpoon = {
+  ["fine-cmdline.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
-    url = "https://github.com/theprimeagen/harpoon"
+    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fine-cmdline.nvim",
+    url = "https://github.com/VonHeikemen/fine-cmdline.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -110,11 +110,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["noice.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\noice.nvim",
-    url = "https://github.com/folke/noice.nvim"
-  },
   ["nui.nvim"] = {
     loaded = true,
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nui.nvim",
@@ -130,11 +125,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
-  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
@@ -144,6 +134,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "C:\\Users\\sandr\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
