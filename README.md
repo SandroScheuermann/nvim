@@ -51,7 +51,7 @@
 ## On code completion
   - tab = next selection
   - shift + tab = previous selection
-  - enter = selects current selection
+  - enter = select current selection
 
 ## Misc
   - leader + t + b = toggle transparent background 
