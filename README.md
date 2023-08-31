@@ -4,7 +4,7 @@
 - Git integration [vim-fugitive](https://github.com/tpope/vim-fugitive) 
 - LSP "manager", it is a bundle of plugins, mason, auto-complete plugins, etc. [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim) 
 - Literally an undo tree... [undotree](https://github.com/mbbill/undotree)
-- Colorscheme [catppuccin]([https://github.com/EdenEast/nightfox.nvim](https://github.com/catppuccin/nvim))
+- Colorscheme [catppuccin](https://github.com/catppuccin/nvim)
 - File finder [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - Tree explorer [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - Cool floating cmd [fine-cmdline](https://github.com/VonHeikemen/fine-cmdline.nvim)
