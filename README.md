@@ -1,3 +1,15 @@
+Windows 11 : 
+    <details>
+        <summary>Chocolatey</summary>
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) 
+    </details> 
+    <details>
+        <summary>Neovim</summary>
+- choco install neovim
+- choco install ripgrep
+- choco install mingw
+    </details> 
+    
 ## Plugins list  
 - Package manager, probably I'll be migrating to lazy afterwards [packer](https://github.com/wbthomason/packer.nvim)
 - Syntax highlighting [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)    
