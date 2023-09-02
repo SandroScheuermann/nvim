@@ -8,6 +8,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 - choco install neovim
 - choco install ripgrep
 - choco install mingw
+- choco install git
+- choco install alacritty
     </details> 
     
 ## Plugins list  
