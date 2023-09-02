@@ -10,6 +10,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 - choco install mingw
 - choco install git
 - choco install alacritty
+- choco install lazygit
     </details> 
     
 ## Plugins list  
