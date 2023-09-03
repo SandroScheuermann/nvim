@@ -43,7 +43,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 - leader + g + s = git status
 - leader + g + c = git commit -a
 - leader + g + p = git push
-- leader + g + d = git diff 
+- leader + g + d = git diff
+
+## Lazygit
+- leader + g + g = git git (????)
 
 ## VSP-Zero
   - g + d = go to definition
