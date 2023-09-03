@@ -50,8 +50,11 @@ local P = {
             local lsp = require('lsp-zero')
 
             lsp.ensure_installed(
-                {'omnisharp',
-                    'lua_ls'}
+                {
+                    'omnisharp',
+                    'lua_ls',
+                    'gopls'
+                }
             )
 
             lsp.on_attach(function(client, bufnr)
