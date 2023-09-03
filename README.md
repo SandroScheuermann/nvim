@@ -14,9 +14,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
     </details> 
     
 ## Plugins list  
-- Package manager, probably I'll be migrating to lazy afterwards [packer](https://github.com/wbthomason/packer.nvim)
+- Package manager [lazy.nvim](https://github.com/folke/lazy.nvim)
 - Syntax highlighting [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)    
-- Git integration [vim-fugitive](https://github.com/tpope/vim-fugitive) 
+- Simple git integration [vim-fugitive](https://github.com/tpope/vim-fugitive)
+- Pre-configured float terminal with lazygit [float-terminal-lazygit](https://github.com/kdheepak/lazygit.nvim)
 - LSP "manager", it is a bundle of plugins, mason, auto-complete plugins, etc. [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim) 
 - Literally an undo tree... [undotree](https://github.com/mbbill/undotree)
 - Colorscheme [catppuccin](https://github.com/catppuccin/nvim)
@@ -42,7 +43,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 - leader + g + s = git status
 - leader + g + c = git commit -a
 - leader + g + p = git push
-- leader + g + d = git diff 
+- leader + g + d = git diff
+
+## Lazygit
+- leader + g + g = git git (????)
 
 ## VSP-Zero
   - g + d = go to definition
