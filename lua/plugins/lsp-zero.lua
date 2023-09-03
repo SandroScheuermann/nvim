@@ -26,7 +26,7 @@ local P = {
         config = function()
             require('lsp-zero.cmp').extend()
             local cmp = require('cmp')
-            local cmp_action = require('lsp-zero.cmp').action() 
+            local cmp_action = require('lsp-zero.cmp').action()
 
             cmp.setup({
                 mapping = {
@@ -53,7 +53,7 @@ local P = {
                 {
                     'omnisharp',
                     'lua_ls',
-                    'gopls'
+                    'gopls',
                 }
             )
 
@@ -70,9 +70,24 @@ local P = {
                 vim.keymap.set("n", "<C-h>" , function() vim.lsp.buf.signature_help() end)
             end)
 
-            -- (Optional) Configure lua language server for neovim
             require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
+            local util = require('lspconfig/util')
+
+            require('lspconfig').gopls.setup{
+                cmd = {"gopls"},
+                filetypes = {"go", "gomod", "gowork", "gotmpl"},
+                root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+                settings = {
+                    gopls = {
+                        completeUnimported = true,
+                        usePlaceholders = true,
+                        analyses = {
+                            unusedparams = true,
+                        },
+                        },
+                    },
+            }
             lsp.setup()
         end
     }
