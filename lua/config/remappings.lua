@@ -25,7 +25,6 @@ vim.keymap.set("n", "<leader>7", function() vim.cmd("tabnext7") end)
 vim.keymap.set("n", "<leader>8", function() vim.cmd("tabnext8") end)
 vim.keymap.set("n", "<leader>9", function() vim.cmd("tabnext9") end)
 
-vim.keymap.set("n", "<leader>sf", function () vim.cmd("w!") vim.cmd("lua vim.lsp.buf.format()") end)
-
-vim.keymap.set("n", "<lejder>sa", function () vim.cmd("wa!") vim.cmd("lua vim.lsp.buf.format()") end)
-vim.keymap.set("n", "<leader>lc", function () vim.cmd("so") end)
+vim.keymap.set("n", "<leader>sf", function() vim.cmd("w!") end)
+vim.keymap.set("n", "<leader>sa", function() vim.cmd("wa!") end)
+vim.keymap.set("n", "<leader>cf", function() vim.cmd("lua vim.lsp.buf.format()") end)
