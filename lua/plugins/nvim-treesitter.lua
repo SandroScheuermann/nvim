@@ -10,7 +10,7 @@ local P = {
             sync_install = false,
             highlight = { enable = true },
             indent = { enable = true },
-            auto_install = false,
+            auto_install = true,
         })
     end
 }
