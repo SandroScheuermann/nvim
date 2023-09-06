@@ -60,7 +60,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ## Tab navigating
   - ctrl + t = opens a new tab
   - ctrl + q / e = navigate through left / right tabs
-  - ctrl + w = close current tab
   - leader + (tabnumber) = go to specific tab
     
 ## Saving buffers
