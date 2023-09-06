@@ -27,3 +27,5 @@ vim.keymap.set("n", "<leader>9", function() vim.cmd("tabnext9") end)
 vim.keymap.set("n", "<leader>sf", function() vim.cmd("w!") end)
 vim.keymap.set("n", "<leader>sa", function() vim.cmd("wa!") end)
 vim.keymap.set("n", "<leader>cf", function() vim.cmd("lua vim.lsp.buf.format()") end)
+
+vim.keymap.set("n", "<leader>ve", function() vim.diagnostic.open_float(0, {scope="line"}) end)
