@@ -1,0 +1,25 @@
+window:
+  opacity: 0.90
+
+  dimensions:
+    columns: 100
+    lines: 25
+
+font:
+  size: 16.5
+
+  normal:
+    family: JetBrainsMono Nerd Font Propo
+    style: Regular
+
+  bold:
+    family: JetBrainsMono Nerd Font Propo
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font Propo
+    style: Italic
+
+  bold_italic:
+    family: JetBrainsMono Nerd Font Propo
+    style: Bold Italic
