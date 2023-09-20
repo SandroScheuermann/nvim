@@ -8,15 +8,48 @@ local P = {
     },
     config = function()
         require("neo-tree").setup({
+            commands = {
+                show_diff = function(state)
+                    -- some variables. use any if you want
+                    local node = state.tree:get_node()
+                    -- local abs_path = node.path
+                    -- local rel_path = vim.fn.fnamemodify(abs_path, ":~:.")
+                    -- local file_name = node.name
+                    local is_file = node.type == "file"
+                    if not is_file then
+                        vim.notify("Diff only for files", vim.log.levels.ERROR)
+                        return
+                    end
+                    -- open file
+                    local cc = require("neo-tree.sources.common.commands")
+                    cc.open(state, function()
+                        -- do nothing for dirs
+                    end)
+
+                    -- I recommend using one of below to show the diffs
+
+                    -- Raw vim
+                    -- git show ...: change arg as you want
+                    -- @: current file vs git head
+                    -- @^: current file vs previous commit
+                    -- @^^^^: current file vs 4 commits before head and so on...
+--                    vim.cmd([[
+--                    !git show @^:% > /tmp/%
+--                    vert diffs /tmp/%
+--                    ]])
+                    -- diffview.nvim
+                    vim.cmd([[DiffviewOpen -- %]])
+                end,
+            },
             close_if_last_window = true,
+            popup_border_style = "rounded",
             source_selector = {
                 winbar = true,
-                content_layout = "center",
-                tab_labels = {
-                    filesystem = " Files",
-                    git_status = " Git",
-                    buffers = " Buffer",
-                    diagnostics = "",
+                statusline = false,
+                sources = {
+                    { source = "filesystem" },
+                    { source = "git_status" },
+                    { source = "buffers" },
                 },
             },
             default_component_configs = {
@@ -46,6 +79,7 @@ local P = {
                 mappings = {
                     ["o"] = "open",
                     ["v"] = "open_vsplit",
+                    ["D"] = "show_diff",
                 },
             },
             filesystem = {

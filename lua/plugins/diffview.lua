@@ -1,10 +1,10 @@
 local P =
 {
-    "catppuccin/nvim",
+    "sindrets/diffview.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd("colorscheme catppuccin-frappe")
+        require("diffview").setup()
     end,
-} return P
-
+}
+return P

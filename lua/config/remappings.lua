@@ -13,6 +13,7 @@ vim.keymap.set("n", "Q", "<nop>") -- reza a lenda que é zoado apertar Q...
 vim.keymap.set("n", "<C-q>", vim.cmd.tabNext)
 vim.keymap.set("n", "<C-e>", vim.cmd.tabnext)
 vim.keymap.set("n", "<C-t>", vim.cmd.tabnew)
+vim.keymap.set("n", "<leader>tc", vim.cmd.tabclose)
 
 vim.keymap.set("n", "<leader>1", function() vim.cmd("tabnext1") end)
 vim.keymap.set("n", "<leader>2", function() vim.cmd("tabnext2") end)
