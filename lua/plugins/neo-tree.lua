@@ -9,6 +9,7 @@ local P = {
     config = function()
         require("neo-tree").setup({
             commands = {
+                popup_border_style = "rounded",
                 show_diff = function(state)
                     -- some variables. use any if you want
                     local node = state.tree:get_node()

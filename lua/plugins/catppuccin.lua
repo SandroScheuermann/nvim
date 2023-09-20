@@ -4,7 +4,7 @@ local P =
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd("colorscheme catppuccin-frappe")
+        vim.cmd("colorscheme catppuccin-frappe")
     end,
-} return P
-
+}
+return P

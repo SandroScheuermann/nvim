@@ -7,7 +7,7 @@ local theme = {
     tail = 'TabLine',
 }
 
-local bucetona = function()
+local tConfig = function()
 require('tabby.tabline').set(function(line)
     return {
         {
@@ -53,6 +53,6 @@ end
 local P = {
     "nanozuki/tabby.nvim",
     lazy = false,
-    config = bucetona,
+    config = tConfig,
 }
 return P
