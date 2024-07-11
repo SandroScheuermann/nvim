@@ -1,5 +1,5 @@
 local P = {
-    "mfussenegger/nvim-dap.nvim",
+    "mfussenegger/nvim-dap",
     dependencies = {
         "leoluz/nvim-dap-go",
         "rcarriga/nvim-dap-ui",
