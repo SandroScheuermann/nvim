@@ -7,9 +7,9 @@ local P = {
         require("telescope").setup({})
     end,
     keys = {
-        { 'n', '<leader>fg', function() require('elescope.builtin').git_files({}) end },
-        { 'n', '<leader>ff', function() require('telescope.builtin').find_files({}) end },
-        { 'n', '<leader>fs', function() require('telescope.builtin').grep_string({ search = vim.fn.input("Grep > ") }); end }
+        {'<leader>fg', function() require('elescope.builtin').git_files({}) end },
+        {'<leader>ff', function() require('telescope.builtin').find_files({}) end },
+        {'<leader>fs', function() require('telescope.builtin').grep_string({ search = vim.fn.input("Grep > ") }); end }
     }
 }
 
