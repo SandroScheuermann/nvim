@@ -1,33 +1,54 @@
 local P = {
     "mfussenegger/nvim-dap",
     dependencies = {
-        --"leoluz/nvim-dap-go",
+        "leoluz/nvim-dap-go",
         "nvim-neotest/nvim-nio",
         "rcarriga/nvim-dap-ui",
+        "theHamsta/nvim-dap-virtual-text",
         'williamboman/mason.nvim',
     },
     lazy = false,
     config = function()
-        require("dapui").setup()
-
         Dap = require "dap"
         Ui = require "dapui"
 
-        Dap.adapters.go = {
-            type = 'executable',
-            command = 'node',
-            args = { "E:\\nvim-dap-go\\vscode-go\\extension\\dist\\debugAdapter.js" },
+        require("dapui").setup()
+        require("nvim-dap-virtual-text").setup()
+        require("dap-go").setup()
+
+        Dap.adapters.delve = {
+            type = 'server',
+            port = '${port}',
+            executable = {
+                command = 'dlv',
+                args = { 'dap', '-l', '127.0.0.1:${port}' },
+                detached = false
+            }
         }
+
         Dap.configurations.go = {
             {
-                type = 'go',
-                name = 'Debug',
-                request = 'launch',
-                showLog = false,
-                program = "${file}",
-                dlvToolPath = "E:\\gopath\\bin\\dlv.exe" -- Adjust to where delve is installed
+                type = "delve",
+                name = "Debug",
+                request = "launch",
+                program = "${file}"
             },
+            {
+                type = "delve",
+                name = "Debug test",
+                request = "launch",
+                mode = "test",
+                program = "${file}"
+            },
+            {
+                type = "delve",
+                name = "Debug test (go.mod)",
+                request = "launch",
+                mode = "test",
+                program = "./${relativeFileDirname}"
+            }
         }
+
         vim.keymap.set("n", "<F3>", function() Dap.step_out() end)
         vim.keymap.set("n", "<F5>", function() Dap.continue() end)
         vim.keymap.set("n", "<F9>", function() Dap.toggle_breakpoint() end)
