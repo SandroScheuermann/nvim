@@ -105,7 +105,7 @@ local P = {
         })
     end,
     keys = {
-        { "<leader>e", ":Neotree toggle <CR>", desc = "Toggle explorer" },
+        { "<leader>ft", ":Neotree toggle <CR>", desc = "Toggle file tree" },
     }
 }
 
