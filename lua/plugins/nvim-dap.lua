@@ -28,7 +28,7 @@ local P = {
 
         Dap.adapters.coreclr = {
             type = 'executable',
-            command = '/path/to/dotnet/netcoredbg/netcoredbg',
+            command = 'C:\\Users\\sandr\\AppData\\Local\\nvim-data\\mason\\packages\\netcoredbg\\netcoredbg\\netcoredbg.exe',
             args = { '--interpreter=vscode' }
         }
 
