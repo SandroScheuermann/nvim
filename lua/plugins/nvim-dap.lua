@@ -62,7 +62,7 @@ local P = {
         vim.keymap.set("n", "<F11>", function() Dap.step_into() end)
         vim.keymap.set("n", "<F12>", function() Dap.step_back() end)
         vim.keymap.set("n", "<leader>ev", function() Ui.eval(nil, { enter = true }) end)
-        vim.keymap.set("n", "<leader>rr", function() Ui.toggle() end)
+        vim.keymap.set("n", "<leader>ui", function() Ui.toggle() end)
 
         Dap.listeners.before.attach.dapui_config = function()
             Ui.open()
