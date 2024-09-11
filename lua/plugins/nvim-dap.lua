@@ -26,6 +26,12 @@ local P = {
             }
         }
 
+        Dap.adapters.coreclr = {
+            type = 'executable',
+            command = '/path/to/dotnet/netcoredbg/netcoredbg',
+            args = { '--interpreter=vscode' }
+        }
+
         Dap.configurations.cs = {
             {
                 type = "coreclr",

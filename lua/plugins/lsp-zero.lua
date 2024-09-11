@@ -43,7 +43,7 @@ local P = {
                 {
                     'lua_ls',
                     'gopls',
-                    'omnisharp',
+                    'csharp-language-server',
                 }
             )
 
@@ -62,6 +62,8 @@ local P = {
             end)
 
             require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+            
+            require('lspconfig').csharp_ls.setup({})
 
             require('lspconfig').gopls.setup {
                 gopls = {
