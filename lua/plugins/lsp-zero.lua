@@ -43,6 +43,7 @@ local P = {
                 {
                     'lua_ls',
                     'gopls',
+                    'omnisharp',
                 }
             )
 
