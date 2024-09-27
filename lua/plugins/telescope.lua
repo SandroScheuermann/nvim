@@ -4,7 +4,11 @@ local P = {
     dependencies = { 'nvim-lua/plenary.nvim' },
     lazy = false,
     config = function()
-        require("telescope").setup({})
+        require("telescope").setup({
+            defaults = {
+                file_ignore_patterns = { "%.git/", "%.exe", "%.log", "%.csproj", "%.sln" }
+            }
+        })
     end,
     keys = {
         {'<leader>fg', function() require('elescope.builtin').git_files({}) end },

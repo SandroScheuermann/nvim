@@ -89,9 +89,11 @@ local P = {
                 hijack_netrw_behavior = "open_current",
                 use_libuv_file_watcher = false,
                 filtered_items = {
-                    visible = true,
-                    hide_dotfiles = false,
-                    hide_gitignored = true,
+                visible = false,
+                hide_dotfiles = false,
+                hide_gitignored = true,
+                hide_by_name = { "bin", "obj" },  -- Pastas com nomes específicos
+                hide_by_pattern = { "*.csproj", "*.sln", "*.exe", "*.log" },  -- Arquivos com padrões específicos                   hide_by_name = { "%.git", "%.exe", "%.log", "%.csproj", "%.sln" },  -- Ignora arquivos com essas extensões
                 },
             },
             event_handlers = {
